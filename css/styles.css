@@ -1,0 +1,320 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables */
+:root{
+    --primary-color: #fb6a27;
+    --dark-color: #0f0f0f;
+    --gray-color: gray;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Global Css */
+section{
+    padding: 70px 0;
+}
+
+section.section-title{
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-orange:hover{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.text-orange{
+    color: var(--primary-color);
+}
+
+.text-dark{
+    color: var(--dark-color);
+}
+
+.fs-7{
+    font-size: var(--small-font-size);
+}
+
+.form-color:focus{
+    box-shadow: none;
+    background-color: var(--primary-color);
+}
+/* Css Per Section */
+
+/* Navbar */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active {
+    color: var(--primary-color);
+}
+
+/* Header */
+.header-section {
+    margin-top: 100px; /* Beri jarak atas sebesar 100px */
+}
+
+.header-section .header-tittle{
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill{
+    color: var(--dark-color);
+}
+
+.header-section .header-skill:hover{
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: rotate(-45deg);
+
+}
+
+.header-section .header-skill:hover i{
+    transition: rotate(-45deg);
+}
+
+.header-img-wrapper {
+    position: relative;
+    display: inline-block; /* Supaya menjadi blok di dalam elemen parent */
+    padding: 20px; /* Jarak antara gambar dan lingkaran */
+    border-radius: 50%; /* Membuat elemen menjadi lingkaran */
+    background-color: var(--primary-color); /* Warna lingkaran */
+    box-shadow: 0 0 15px rgba(251, 106, 39, 0.5); /* Efek bayangan */
+    overflow: hidden; /* Menghindari gambar keluar dari lingkaran */
+    margin: 0 auto; /* Membuat wrapper ke tengah secara horizontal */
+    margin-top: 50px; /* Beri jarak atas sebesar 50px untuk gambar */
+}
+
+.header-img-wrapper img {
+    width: 350px; /* Membuat gambar lebih besar */
+    height: 350px; /* Membuat gambar tetap proporsional */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-radius: 50%; /* Membuat gambar juga menjadi lingkaran */
+    display: block; /* Menghapus margin bawaan gambar */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek smooth */
+}
+
+.header-img-wrapper:hover img {
+    transform: scale(1.2); /* Membesarkan gambar hingga 120% saat hover */
+}
+
+/* Pastikan elemen parent dari .header-img-wrapper */
+.header-section .container {
+    display: flex; /* Mengaktifkan flexbox pada parent */
+    justify-content: center; /* Menyusun elemen ke tengah horizontal */
+    align-items: center; /* Menyusun elemen ke tengah vertikal */
+    flex-direction: column; /* (Opsional) jika ingin stack elemen secara vertikal */
+    height: 100%; /* Pastikan tinggi parent cukup besar */
+}
+
+
+
+
+
+/* Portofolio */
+.portofolio-section .card .card-img-top{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .portofolio-section .card .card-img-top {
+        height: 100px;
+    }
+}
+
+.portofolio-secrion .card-img-top {
+    width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
+    height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+    border-radius: 0.5rem; /* Sudut melengkung pada gambar */
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #343a40; /* Dark text color for readability */
+}
+
+/* Portfolio Detail Section */
+.portfolio-detail-section {
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Padding for the section */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: bold; /* Bold title */
+    color: #0b0b0b; /* Primary color for the title */
+}
+
+/* Text Styles */
+.text-orange {
+    color: #ff6f20; /* Custom orange color */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default card border */
+}
+
+.card-body {
+    padding: 20px; /* Padding for card body */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+
+    .portfolio-detail-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Skill */
+/* Gaya Umum untuk Bagian Skills */
+.skill-section {
+    padding: 60px 0; /* Memberikan padding atas dan bawah */
+    background-color: #1a1a1a; /* Warna latar belakang gelap */
+}
+
+.skill-section .text-orange {
+    color: #ff6f20; /* Warna oranye untuk teks */
+}
+
+.skill-section .section-title {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.skill-section .dev-icons {
+    list-style: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Menyebar ikon secara merata */
+    flex-wrap: wrap; /* Membungkus ikon jika terlalu banyak */
+}
+
+.skill-section .dev-icons .list-inline-item {
+    font-size: 2.5rem; /* Ukuran ikon */
+    color: #ffffff; /* Warna ikon putih */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.skill-section .dev-icons .list-inline-item:hover {
+    transform: scale(1.1); /* Membesarkan ikon saat hover */
+}
+
+.header-img-wrapper {
+    text-align: center; /* Memusatkan gambar */
+}
+
+.header-img {
+    max-width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+}
+
+/* Gaya Umum untuk Bagian Contact */
+.contact-secrion {
+    padding: 60px 0; /* Memberikan padding atas dan bawah */
+    background-color: #f8f9fa; /* Warna latar belakang terang */
+}
+
+.contact-secrion .text-orange {
+    color: #ff6f20; /* Warna oranye untuk teks */
+}
+
+.contact-secrion .section-title {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.contact-secrion .text-secondary {
+    color: #6c757d; /* Warna teks sekunder */
+}
+
+.contact-secrion .d-felx {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+}
+
+.contact-secrion .gap-2 {
+    gap: 0.5rem; /* Jarak antar elemen */
+}
+
+.contact-secrion .mb-3 {
+    margin-bottom: 1rem; /* Margin bawah untuk elemen */
+}
+
+.contact-secrion .dev-icons {
+    list-style: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Menyebar ikon secara merata */
+    margin-top: 20px; /* Margin atas untuk jarak dari konten sebelumnya */
+}
+
+.contact-secrion .dev-icons .list-inline-item {
+    font-size: 2rem; /* Ukuran ikon */
+    color: #271004; /* Warna ikon oranye */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.contact-secrion .dev-icons .list-inline-item:hover {
+    transform: scale(1.1); /* Membesarkan ikon saat hover */
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    background-color: #000; /* Ubah warna sesuai kebutuhan */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+
+
