@@ -203,14 +203,64 @@ body {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Responsive Styles */
+/* Gaya untuk section portfolio */
+.portfolio-section {
+    padding: 60px 0; /* Memberikan padding atas dan bawah */
+    color: #ffffff; /* Warna teks putih */
+}
+
+.portfolio-section .text-orange {
+    color: #ff6f20; /* Warna oranye untuk teks */
+}
+
+.portfolio-section .section-title {
+    font-size: 2.5rem; /* Ukuran font untuk judul */
+    margin-bottom: 30px; /* Margin bawah untuk jarak */
+}
+
+.portfolio-section .card {
+    background-color: #2c2c2c; /* Warna latar belakang kartu */
+    border: none; /* Menghilangkan border */
+    border-radius: 10px; /* Membuat sudut kartu melengkung */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+    margin-bottom: 30px; /* Menambahkan jarak bawah antara kartu */
+}
+
+.portfolio-section .card:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+}
+
+.portfolio-section .card-img-top {
+    border-top-left-radius: 10px; /* Membuat sudut kiri atas melengkung */
+    border-top-right-radius: 10px; /* Membuat sudut kanan atas melengkung */
+}
+
+.portfolio-section .fw-semibold {
+    font-weight: 600; /* Menebalkan teks */
+}
+
+.portfolio-section p {
+    font-size: 1rem; /* Ukuran font untuk paragraf */
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+.portfolio-section a.text-orange {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #ff6f20; /* Warna oranye untuk tautan */
+}
+
+.portfolio-section a.text-orange:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Responsif */
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem; /* Smaller title on mobile */
+    .portfolio-section .section-title {
+        font-size: 2rem; /* Ukuran font untuk judul pada layar kecil */
     }
 
-    .portfolio-detail-section {
-        padding: 20px; /* Adjust padding for smaller screens */
+    .portfolio-section .card {
+        margin-bottom: 20px; /* Margin bawah untuk kartu pada layar kecil */
     }
 }
 
