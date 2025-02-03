@@ -137,132 +137,105 @@ section.section-title{
 
 
 /* Portofolio */
-.portofolio-section .card .card-img-top{
-    height: 240px;
-    width: 100%;
-    object-fit: cover;
-}
-
-@media screen and (max-width: 768px) {
-    .portofolio-section .card .card-img-top {
-        height: 100px;
-    }
-}
-
-.portofolio-secrion .card-img-top {
-    width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
-    height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
-    object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
-    border-radius: 0.5rem; /* Sudut melengkung pada gambar */
-}
-
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light background for contrast */
-    color: #343a40; /* Dark text color for readability */
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
 
-/* Portfolio Detail Section */
-.portfolio-detail-section {
-    background-color: #ffffff; /* White background for the section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 30px; /* Padding for the section */
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-/* Section Title */
-.section-title {
-    font-size: 2.5rem; /* Larger font size for the title */
-    font-weight: bold; /* Bold title */
-    color: #0b0b0b; /* Primary color for the title */
-}
+  .text-orange {
+    color: #ff6600;
+  }
 
-/* Text Styles */
-.text-orange {
-    color: #ff6f20; /* Custom orange color */
-}
+  .fw-semibold {
+    font-weight: 600;
+  }
 
-/* Card Styles */
-.card {
-    border: none; /* Remove default card border */
-}
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-.card-body {
-    padding: 20px; /* Padding for card body */
-}
+  .swiper {
+    margin-top: 20px;
+  }
 
-/* Button Styles */
-.btn-primary {
-    background-color: #007bff; /* Primary button color */
-    border: none; /* Remove border */
-    transition: background-color 0.3s; /* Smooth transition */
-}
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
 
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
+  .card {
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
 
-/* Gaya untuk section portfolio */
-.portfolio-section {
-    padding: 60px 0; /* Memberikan padding atas dan bawah */
-    color: #ffffff; /* Warna teks putih */
-}
+  .card:hover {
+    transform: scale(1.05);
+  }
 
-.portfolio-section .text-orange {
-    color: #ff6f20; /* Warna oranye untuk teks */
-}
+  .card-body {
+    padding: 15px;
+  }
 
-.portfolio-section .section-title {
-    font-size: 2.5rem; /* Ukuran font untuk judul */
-    margin-bottom: 30px; /* Margin bawah untuk jarak */
-}
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 
-.portfolio-section .card {
-    background-color: #2c2c2c; /* Warna latar belakang kartu */
-    border: none; /* Menghilangkan border */
-    border-radius: 10px; /* Membuat sudut kartu melengkung */
-    transition: transform 0.3s; /* Efek transisi saat hover */
-    margin-bottom: 30px; /* Menambahkan jarak bawah antara kartu */
-}
+  .btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-.portfolio-section .card:hover {
-    transform: scale(1.05); /* Membesarkan kartu saat hover */
-}
+  .btn:hover {
+    background-color: #ff6600;
+    color: #fff;
+  }
 
-.portfolio-section .card-img-top {
-    border-top-left-radius: 10px; /* Membuat sudut kiri atas melengkung */
-    border-top-right-radius: 10px; /* Membuat sudut kanan atas melengkung */
-}
+  .btn i {
+    font-size: 1.2rem;
+  }
 
-.portfolio-section .fw-semibold {
-    font-weight: 600; /* Menebalkan teks */
-}
+  .d-flex {
+    display: flex;
+  }
 
-.portfolio-section p {
-    font-size: 1rem; /* Ukuran font untuk paragraf */
-    line-height: 1.5; /* Jarak antar baris */
-}
+  .align-items-center {
+    align-items: center;
+  }
 
-.portfolio-section a.text-orange {
-    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
-    color: #ff6f20; /* Warna oranye untuk tautan */
-}
+  .justify-content-center {
+    justify-content: center;
+  }
 
-.portfolio-section a.text-orange:hover {
-    text-decoration: underline; /* Garis bawah saat hover */
-}
+  .justify-content-end {
+    justify-content: flex-end;
+  }
 
-/* Responsif */
-@media (max-width: 768px) {
-    .portfolio-section .section-title {
-        font-size: 2rem; /* Ukuran font untuk judul pada layar kecil */
-    }
+  .gap-3 {
+    gap: 10px;
+  }
 
-    .portfolio-section .card {
-        margin-bottom: 20px; /* Margin bawah untuk kartu pada layar kecil */
-    }
-}
+  .mt-3 {
+    margin-top: 15px;
+  }
 
 /* Skill */
 /* Gaya Umum untuk Bagian Skills */
