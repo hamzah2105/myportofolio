@@ -1,70 +1,69 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Variables */
-:root{
+:root {
     --primary-color: #fb6a27;
     --dark-color: #0f0f0f;
     --gray-color: gray;
-
     --h1-font-size: 40px;
     --h2-font-size: 32px;
     --small-font-size: 14px;
 }
+
 /* Reset Css */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* Global Css */
-section{
+section {
     padding: 70px 0;
 }
 
-section.section-title{
+section.section-title {
     font-size: var(--h2-font-size);
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.btn-orange{
+.btn-orange {
     background-color: var(--primary-color);
     color: white;
 }
 
-.btn-orange:hover{
+.btn-orange:hover {
     background-color: var(--dark-color);
     color: white;
 }
 
-.text-orange{
+.text-orange {
     color: var(--primary-color);
 }
 
-.text-dark{
+.text-dark {
     color: var(--dark-color);
 }
 
-.fs-7{
+.fs-7 {
     font-size: var(--small-font-size);
 }
 
-.form-color:focus{
+.form-color:focus {
     box-shadow: none;
     background-color: var(--primary-color);
 }
-/* Css Per Section */
 
 /* Navbar */
 .navbar .nav-item .nav-link:hover,
@@ -74,270 +73,138 @@ section.section-title{
 
 /* Header */
 .header-section {
-    margin-top: 100px; /* Beri jarak atas sebesar 100px */
-}
-
-.header-section .header-tittle{
-    font-size: var(--h1-font-size);
-}
-
-.header-section .header-skill{
-    color: var(--dark-color);
-}
-
-.header-section .header-skill:hover{
-    color: var(--primary-color);
-}
-
-.header-section .header-skill i {
-    transition: rotate(-45deg);
-
-}
-
-.header-section .header-skill:hover i{
-    transition: rotate(-45deg);
+    margin-top: 100px;
 }
 
 .header-img-wrapper {
     position: relative;
-    display: inline-block; /* Supaya menjadi blok di dalam elemen parent */
-    padding: 20px; /* Jarak antara gambar dan lingkaran */
-    border-radius: 50%; /* Membuat elemen menjadi lingkaran */
-    background-color: var(--primary-color); /* Warna lingkaran */
-    box-shadow: 0 0 15px rgba(251, 106, 39, 0.5); /* Efek bayangan */
-    overflow: hidden; /* Menghindari gambar keluar dari lingkaran */
-    margin: 0 auto; /* Membuat wrapper ke tengah secara horizontal */
-    margin-top: 50px; /* Beri jarak atas sebesar 50px untuk gambar */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(251, 106, 39, 0.5);
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .header-img-wrapper img {
-    width: 350px; /* Membuat gambar lebih besar */
-    height: 350px; /* Membuat gambar tetap proporsional */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-    border-radius: 50%; /* Membuat gambar juga menjadi lingkaran */
-    display: block; /* Menghapus margin bawaan gambar */
-    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek smooth */
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .header-img-wrapper:hover img {
-    transform: scale(1.2); /* Membesarkan gambar hingga 120% saat hover */
+    transform: scale(1.2);
 }
-
-/* Pastikan elemen parent dari .header-img-wrapper */
-.header-section .container {
-    display: flex; /* Mengaktifkan flexbox pada parent */
-    justify-content: center; /* Menyusun elemen ke tengah horizontal */
-    align-items: center; /* Menyusun elemen ke tengah vertikal */
-    flex-direction: column; /* (Opsional) jika ingin stack elemen secara vertikal */
-    height: 100%; /* Pastikan tinggi parent cukup besar */
-}
-
-
-
-
 
 /* Portofolio */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .text-orange {
-    color: #ff6600;
-  }
-
-  .fw-semibold {
-    font-weight: 600;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .swiper {
-    margin-top: 20px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
-
-  .card {
+.card {
     width: 300px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
-  }
+}
 
-  .card:hover {
+.card:hover {
     transform: scale(1.05);
-  }
+}
 
-  .card-body {
+.card-body {
     padding: 15px;
-  }
+}
 
-  .card-img-top {
+.card-img-top {
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-
-  .btn {
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .btn:hover {
-    background-color: #ff6600;
-    color: #fff;
-  }
-
-  .btn i {
-    font-size: 1.2rem;
-  }
-
-  .d-flex {
-    display: flex;
-  }
-
-  .align-items-center {
-    align-items: center;
-  }
-
-  .justify-content-center {
-    justify-content: center;
-  }
-
-  .justify-content-end {
-    justify-content: flex-end;
-  }
-
-  .gap-3 {
-    gap: 10px;
-  }
-
-  .mt-3 {
-    margin-top: 15px;
-  }
+}
 
 /* Skill */
-/* Gaya Umum untuk Bagian Skills */
 .skill-section {
-    padding: 60px 0; /* Memberikan padding atas dan bawah */
-    background-color: #1a1a1a; /* Warna latar belakang gelap */
-}
-
-.skill-section .text-orange {
-    color: #ff6f20; /* Warna oranye untuk teks */
-}
-
-.skill-section .section-title {
-    font-size: 2rem; /* Ukuran font untuk judul */
-    font-weight: bold; /* Menebalkan teks */
+    padding: 60px 0;
+    background-color: #1a1a1a;
 }
 
 .skill-section .dev-icons {
-    list-style: none; /* Menghilangkan bullet points */
-    padding: 0; /* Menghilangkan padding */
-    display: flex; /* Menggunakan flexbox untuk tata letak */
-    justify-content: space-around; /* Menyebar ikon secara merata */
-    flex-wrap: wrap; /* Membungkus ikon jika terlalu banyak */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skill-section .dev-icons .list-inline-item {
-    font-size: 2.5rem; /* Ukuran ikon */
-    color: #ffffff; /* Warna ikon putih */
-    transition: transform 0.3s; /* Efek transisi saat hover */
+    font-size: 2.5rem;
+    color: #ffffff;
+    transition: transform 0.3s;
 }
 
 .skill-section .dev-icons .list-inline-item:hover {
-    transform: scale(1.1); /* Membesarkan ikon saat hover */
+    transform: scale(1.1);
+}
+/* Contact */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light background color */
 }
 
-.header-img-wrapper {
-    text-align: center; /* Memusatkan gambar */
+.contact-section .dev-icons {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out icons evenly */
+    margin-top: 20px; /* Margin above the icons */
 }
 
-.header-img {
-    max-width: 100%; /* Memastikan gambar responsif */
-    height: auto; /* Mempertahankan rasio aspek gambar */
-    border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+.contact-section .dev-icons .list-inline-item {
+    font-size: 2rem; /* Icon size */
+    color: #271004; /* Icon color */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Gaya Umum untuk Bagian Contact */
-.contact-secrion {
-    padding: 60px 0; /* Memberikan padding atas dan bawah */
-    background-color: #f8f9fa; /* Warna latar belakang terang */
+.contact-section .dev-icons .list-inline-item:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
-.contact-secrion .text-orange {
-    color: #ff6f20; /* Warna oranye untuk teks */
+/* Additional styles for the contact section */
+.contact-section .text-orange {
+    color: #fb6a27; /* Primary color for text */
 }
 
-.contact-secrion .section-title {
-    font-size: 2rem; /* Ukuran font untuk judul */
-    font-weight: bold; /* Menebalkan teks */
+.contact-section .text-secondary {
+    color: #6c757d; /* Secondary text color */
 }
 
-.contact-secrion .text-secondary {
-    color: #6c757d; /* Warna teks sekunder */
+.contact-section .section-title {
+    font-size: 2rem; /* Title font size */
+    font-weight: bold; /* Bold title */
 }
 
-.contact-secrion .d-felx {
-    display: flex; /* Menggunakan flexbox untuk tata letak */
+.contact-section .form-control {
+    border: 1px solid #ced4da; /* Border for input fields */
+    border-radius: 0; /* No border radius */
 }
 
-.contact-secrion .gap-2 {
-    gap: 0.5rem; /* Jarak antar elemen */
+.contact-section .btn {
+    background-color: #fb6a27; /* Button background color */
+    color: white; /* Button text color */
 }
 
-.contact-secrion .mb-3 {
-    margin-bottom: 1rem; /* Margin bawah untuk elemen */
-}
-
-.contact-secrion .dev-icons {
-    list-style: none; /* Menghilangkan bullet points */
-    padding: 0; /* Menghilangkan padding */
-    display: flex; /* Menggunakan flexbox untuk tata letak */
-    justify-content: space-around; /* Menyebar ikon secara merata */
-    margin-top: 20px; /* Margin atas untuk jarak dari konten sebelumnya */
-}
-
-.contact-secrion .dev-icons .list-inline-item {
-    font-size: 2rem; /* Ukuran ikon */
-    color: #271004; /* Warna ikon oranye */
-    transition: transform 0.3s; /* Efek transisi saat hover */
-}
-
-.contact-secrion .dev-icons .list-inline-item:hover {
-    transform: scale(1.1); /* Membesarkan ikon saat hover */
+.contact-section .btn:hover {
+    background-color: #0f0f0f; /* Darker color on hover */
 }
 
 footer {
     position: relative;
     z-index: 10;
-    background-color: #000; /* Ubah warna sesuai kebutuhan */
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-  }
-  
-
-
+}
