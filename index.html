@@ -1,304 +1,406 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css" />
 
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="vendors/boostraps/css/bootstrap.min.css">
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-  <!-- Boxicons -->
-  <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css">
+    <!--MY CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-  <!--MY CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Portofolio | Hamzah</title>
+  </head>
 
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-
-  <title>My Portofolio | Hamzah</title>
-</head>
-
-<body id="home">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Hamzah</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portofolio">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skill">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#timelane">TimeLine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Akhir Navbar -->
-
-  <!-- Header -->
-  <section class="header-section" id="header">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <p class="text-orange fw-semibold">
-            Hamzah
-          </p>
-          <h1 class="header-title text-uppercase fw-bold">
-            Web Developmant</h1>
-          <p class="fw-semibold">Graduated from Pasundan University (Bandung) majoring in Informatics Engineering,
-            enjoys honing and
-            developing my IT skills and is detail-oriented and has aspirations to work in the Web Developer field, and
-            is
-            proficient in HTML5, CSS, PHP, Codeigniter Framework, and Laravel Framework. Has internship experience at
-            the Bandung branch of BPJS Kesehatan in the IT Helpdesk field which creates a website for recording inactive
-            deceased BPJS Kesehatan card participants</p>
-          <div class="d-flex align-items-center gap-4 mt-3">
-            <div class="d-flex align-items-center gap-5">
-              <a href="pdf/_cv ATS Hamzah inggris.docx.pdf"
-                class="header-skill fw-semibold mb-0 btn btn-dark text-white w-250 rounded-0" target="_blank">
-                Resume CV
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 d-flex justify-content-center">
-          <div class="header-img-wrapper">
-            <img src="img/Hamzah.png" class="header-img" alt="Foto Hamzah">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Akhir Jumbotron -->
-
-  <!-- Projects -->
-  <section class="portfolio-section" id="portfolio">
-    <!-- Perbaiki typo "portofolio-secrion" menjadi "portfolio-section" -->
-    <div class="container">
-      <p class="text-orange fw-semibold">Portfolio</p>
-      <!-- Perbaiki "Portofolio" menjadi "Portfolio" untuk konsistensi -->
-      <h2 class="section-title mb-5">Selected Works</h2>
-      <div class="row"> <!-- Menggunakan row untuk menampilkan kartu secara horizontal -->
-        <div class="col-md-4"> <!-- Menggunakan kolom untuk setiap kartu -->
-          <div class="card">
-            <div class="card-body">
-              <img src="img/projects/h.png" alt="Project Image" class="card-img-top rounded mb-3">
-              <!-- Tambahkan alt text yang lebih deskriptif -->
-              <h6 class="fw-semibold">Portfolio</h6> <!-- Perbaiki "Portofolio" menjadi "Portfolio" -->
-              <p class="fw-semibold mb-3">
-                At the Green Academy bootcamp, learn web development, starting from the beginning of learning HTML5,
-                CSS, JavaScript, Bootstrap 5, CodeIgniter, and Laravel. This is a portfolio assignment with the HTML5
-                programming language and using the Visual Studio Code tool.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4"> <!-- Menggunakan kolom untuk setiap kartu -->
-          <div class="card">
-            <div class="card-body">
-              <img src="img/projects/p.png" alt="Project Image" class="card-img-top rounded mb-3">
-              <!-- Tambahkan alt text yang lebih deskriptif -->
-              <h6 class="fw-semibold">Portfolio</h6> <!-- Perbaiki "Portofolio" menjadi "Portfolio" -->
-              <p class="fw-semibold mb-3">
-                At the Green Academy bootcamp, learn web development, starting from the beginning of learning HTML5,
-                CSS, JavaScript, Bootstrap 5, CodeIgniter, and Laravel. This is a food ordering application assignment
-                with the JavaScript programming language and using the Visual Studio Code tool.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4"> <!-- Menggunakan kolom untuk setiap kartu -->
-          <div class="card">
-            <div class="card-body">
-              <img src="img/projects/bpjs.png" alt="Project Image" class="card-img-top rounded mb-3">
-              <!-- Tambahkan alt text yang lebih deskriptif -->
-              <h6 class="fw-semibold">Portfolio</h6> <!-- Perbaiki "Portofolio" menjadi "Portfolio" -->
-              <p class="fw-semibold mb-3">
-                Internship at BPJS Kesehatan ITHelpdesk section and was given the job of creating a website for
-                recording deceased participants who had been deactivated.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4"> <!-- Menggunakan kolom untuk setiap kartu -->
-          <div class="card">
-            <div class="card-body">
-              <img src="img/projects/l.png" alt="Project Image" class="card-img-top rounded mb-3">
-              <!-- Tambahkan alt text yang lebih deskriptif -->
-              <h6 class="fw-semibold">Portfolio</h6> <!-- Perbaiki "Portofolio" menjadi "Portfolio" -->
-              <p class="fw-semibold mb-3">
-                At Green Academy bootcamp, learn web development, starting from scratch learning HTML5, CSS, JavaScript,
-                Bootstrap 5, CodeIgniter, and Laravel. This is a portfolio admin assignment with Laravel 9 programming
-                language and using Visual Studio Code tools.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skill -->
-  <section class="skill-section" id="skill">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <p class="text-orange fw-semibold">Skills</p>
-          <h2 class="section-title text-white mb-5">Programming Languages & Tools</h2>
-          <div class="container mt-5">
-            <div class="row">
-              <ul class="list-inline dev-icons ">
-                <li class="list-inline-item"><i class="devicon-html5-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-css3-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-javascript-plain"></i></i></li>
-                <li class="list-inline-item"><i class="devicon-laravel-original"></i></li>
-                <li class="list-inline-item"><i class="devicon-php-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-codeigniter-plain"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 mt-3">
-          <div class="header-img-wrapper">
-            <img src="img/Hamzah.png" class="header-img" alt="Foto Hamzah">
-          </div>
-        </div>
-  </section>
-  <!-- Akhir Skill -->
-
-  <!-- Working Period -->
-  <section class="timeline-secrion" id="timelane">
-    <div class="container">
-      <p class="text-orange fw-semibold">TimeLine</p>
-      <h2 class="section-title mb-5">Working Period</h2>
-      <div class="row py-3 border-bottom">
-        <div class="col-md-4">Februari. 2024 - Today</div>
-        <div class="col-md-4">Bootcamp Web Development</div>
-        <div class="col-md-4">Green Academy</div>
-      </div>
-      <div class="row py-3 border-bottom">
-        <div class="col-md-4">September. 2022 - 2022</div>
-        <div class="col-md-4">IT HELPDESK</div>
-        <div class="col-md-4">Mangga BPJS Kesehatan, Bandung</div>
-      </div>
-    </div>
-  </section>
-  <!-- Akhir Working Period -->
-
-  <!-- Contact -->
-  <section class="contact-secrion" id="contact">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md-6">
-          <p class="text-orange fw-semibold">Contact</p>
-          <h2 class="section-title mb-5">GET IN TOUCH</h2>
-          <p class="text-secondary mb-3">
-            Please fil out the form on this section to contact with me. Or call
-            between 08:00 a.m. and 09:00 p.m. Et, monday through friday
-          </p>
-          <div class="d-felx align-items-center gap-2 mb-3">
-            <i class="bx bx-map-pin text-orange fs-5"></i>
-            <div class="mb-0">Krajan 1, Karawang Timur, Jawa Barat</div>
-          </div>
-          <div class="d-felx align-items-center gap-2 mb-3">
-            <i class="bx bx-phone-call text-orange fs-5"></i>
-            <div class="mb-0">+62 087874716993</div>
-          </div>
-          <div class="d-felx align-items-center gap-2 mb-3">
-            <i class="bx bx-envelope text-orange fs-5"></i>
-            <div class="mb-0">hamzah210521@gamil.com</div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <a href="https://github.com/hamzah2105" target="_blank" rel="noopener noreferrer">
-                <i class="devicon-github-original"></i>
-              </a>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Hamzah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/hamzah-hamzah-963162298/" target="_blank" rel="noopener noreferrer">
-                <i class="devicon-linkedin-plain"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#portofolio">Portofolio</a>
             </li>
-            <li class="list-inline-item">
-              <a href="https://www.youtube.com/@hamzahdoank6189" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill</a>
             </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/kirikanaannn/profilecard/?igsh=MWhmNHViMXpua3c1bA==" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#timelane">TimeLine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Akhir Contact -->
+    </nav>
+    <!-- Akhir Navbar -->
 
-  <!-- Footer -->
-  <footer class="py-3">
-    <div class="container">
-      <p class="text-white fs-7 mb-0 text-center ">CopyRight & Copy; 2024 Hamzah. All Right Reserved </p>
-    </div>
-  </footer>
-  <!-- Akhir Footer -->
+    <!-- Header -->
+    <section class="header-section" id="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Hamzah</p>
+            <h1 class="header-title text-uppercase fw-bold">Web Developmant</h1>
+            <p class="fw-semibold">
+              Graduated from Pasundan University (Bandung) majoring in
+              Informatics Engineering, enjoys honing and developing my IT skills
+              and is detail-oriented and has aspirations to work in the Web
+              Developer field, and is proficient in HTML5, CSS, PHP, Codeigniter
+              Framework, and Laravel Framework. Has internship experience at the
+              Bandung branch of BPJS Kesehatan in the IT Helpdesk field which
+              creates a website for recording inactive deceased BPJS Kesehatan
+              card participants
+            </p>
+            <div class="d-flex align-items-center gap-4 mt-3">
+              <div class="d-flex align-items-center gap-5">
+                <a
+                  href="pdf/_cv ATS Hamzah inggris.docx.pdf"
+                  class="header-skill fw-semibold mb-0 btn btn-dark text-white w-250 rounded-0"
+                  target="_blank"
+                >
+                  Resume CV
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-center">
+            <div class="header-img-wrapper">
+              <img src="img/Hamzah.png" class="header-img" alt="Foto Hamzah" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Jumbotron -->
 
-  <!-- Javascript -->
-  <script src="vendors/boostraps/js/bootstrap.bundle.min.js"></script>
+    <!-- Projects -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="text-orange fw-semibold">Portofolio</p>
+        <h2 class="section-title mb-5">Selected Works</h2>
 
-  <!-- Swiper Javascrip -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper -->
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <!-- Portfolio Item 1 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="img/projects/images.png"
+                  alt="Project Image"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="card-body">
+                  <h6 class="fw-semibold">Bootcamp Green Academy</h6>
+                  <a href="detail.html" class="btn btn-orange text-white"
+                    >Detail Portofolio</a
+                  >
+                </div>
+              </div>
+            </div>
 
-  <script>
-    var swiper = new Swiper(".portofolio-swiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.btn-prev',
-        prevEl: '.btn-next',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+            <!-- Portfolio Item 2 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="img/projects/logo-bpjs-kesehatan-l.jpg"
+                  alt="Project Image"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="card-body">
+                  <h6 class="fw-semibold">internship BPJS Kesehatan</h6>
+                  <a href="detail2.html" class="btn btn-orange text-white"
+                    >Detail Portofolio</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="img/projects/3.jpg"
+                  alt="Project Image"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="card-body">
+                  <h6 class="fw-semibold">My Project POrtofolio</h6>
+                  <a href="detail3.html" class="btn btn-orange text-white"
+                    >Detail Portofolio</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="img/projects/4.jpg"
+                  alt="Project Image"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="card-body">
+                  <h6 class="fw-semibold">Portfolio Project 4</h6>
+                  <p class="card-text">
+                    Deskripsi singkat project atau portofolio ini. Penjelasan
+                    mengenai fitur dan teknologi yang digunakan.
+                  </p>
+                  <a href="#" class="btn btn-orange text-white"
+                    >Detail Portofolio</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="img/projects/5.jpg"
+                  alt="Project Image"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="card-body">
+                  <h6 class="fw-semibold">Portfolio Project 5</h6>
+                  <p class="card-text">
+                    Deskripsi singkat project atau portofolio ini. Penjelasan
+                    mengenai fitur dan teknologi yang digunakan.
+                  </p>
+                  <a href="#" class="btn btn-orange text-white"
+                    >Detail Portofolio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Navigation and Pagination -->
+          <div class="swiper-button-prev">
+            <i class="bx bx-left-arrow-alt"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+          
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="py-5 bg-dark text-white" id="skill">
+      <div class="container text-center">
+        <p class="text-orange fw-semibold">Skills</p>
+        <h2 class="mb-4">Programming Languages & Tools</h2>
+        <div class="row justify-content-center">
+          <!-- Skill item -->
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-html5-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">HTML</p>
+          </div>
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-css3-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">CSS</p>
+          </div>
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-javascript-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">JavaScript</p>
+          </div>
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-php-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">PHP</p>
+          </div>
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-laravel-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">Laravel</p>
+          </div>
+          <div class="col-4 col-md-2 skill-item">
+            <i class="devicon-codeigniter-plain colored fs-1"></i>
+            <div class="line"></div>
+            <p class="mt-2">CodeIgniter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Skill -->
+
+    <!-- Working Period -->
+    <section class="timeline-secrion" id="timelane">
+      <div class="container">
+        <p class="text-orange fw-semibold">TimeLine</p>
+        <h2 class="section-title mb-5">Working Period</h2>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">Februari. 2024 - Today</div>
+          <div class="col-md-4">Bootcamp Web Development</div>
+          <div class="col-md-4">Green Academy</div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">September. 2022 - 2022</div>
+          <div class="col-md-4">IT HELPDESK</div>
+          <div class="col-md-4">Mangga BPJS Kesehatan, Bandung</div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Working Period -->
+
+    <!-- Contact -->
+    <!-- <section class="contact-secrion" id="contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Contact</p>
+            <h2 class="section-title mb-5">GET IN TOUCH</h2>
+            <p class="text-secondary mb-3">
+              Please fil out the form on this section to contact with me. Or
+              call between 08:00 a.m. and 09:00 p.m. Et, monday through friday
+            </p>
+            <div class="d-felx align-items-center gap-2 mb-3">
+              <i class="bx bx-map-pin text-orange fs-5"></i>
+              <div class="mb-0">Krajan 1, Karawang Timur, Jawa Barat</div>
+            </div>
+            <div class="d-felx align-items-center gap-2 mb-3">
+              <i class="bx bx-phone-call text-orange fs-5"></i>
+              <div class="mb-0">+62 087874716993</div>
+            </div>
+            <div class="d-felx align-items-center gap-2 mb-3">
+              <i class="bx bx-envelope text-orange fs-5"></i>
+              <div class="mb-0">hamzah210521@gamil.com</div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <a
+                  href="https://github.com/hamzah2105"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="devicon-github-original"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/hamzah-hamzah-963162298/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="devicon-linkedin-plain"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.youtube.com/@hamzahdoank6189"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/kirikanaannn/profilecard/?igsh=MWhmNHViMXpua3c1bA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="py-3">
+      <div class="container">
+        <p class="text-white fs-7 mb-0 text-center">
+          CopyRight & Copy; 2024 Hamzah. All Right Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Javascript -->
+    <script src="vendors/boostraps/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper Javascrip -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-      }
-    });
-
-  </script>
-
-</body>
-
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 1,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
